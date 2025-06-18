@@ -22,8 +22,7 @@ const TextFunction1 = () => {
   }
 
   const handleDelete = (ItemIndex) => {
-    const temp = [...tableData];
-    temp.filter((_, index) => ItemIndex !== index);
+    const temp =  tableData.filter((_, index) => ItemIndex !== index);
     console.log("This is temp",temp);
     setTableData(temp);
   }
